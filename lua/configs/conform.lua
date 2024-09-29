@@ -4,7 +4,7 @@ local options = {
         -- c = { "clang-format" },
         -- cpp = { "clang-format" },
         -- go = { "gofumpt", "goimports-reviser", "golines" },
-        -- python = { "isort", "black" },
+        python = { "isort", "black" },
     },
 
     formatters = {
@@ -37,20 +37,20 @@ local options = {
         --         "--quote-style", "AutoPreferDouble",
         --     },
         -- },
-        -- -- Python
-        -- black = {
-        --     prepend_args = {
-        --         "--fast",
-        --         "--line-length",
-        --         "80",
-        --     },
-        -- },
-        -- isort = {
-        --     prepend_args = {
-        --         "--profile",
-        --         "black",
-        --     },
-        -- },
+        -- Python
+        black = {
+            prepend_args = {
+                "--fast",
+                "--line-length",
+                "80",
+            },
+        },
+        isort = {
+            prepend_args = {
+                "--profile",
+                "black",
+            },
+        },
     },
 
     format_on_save = {
